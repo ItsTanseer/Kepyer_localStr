@@ -9,7 +9,7 @@
 
     return (
       <div>
-        <video className='-z-10  fixed object-cover h-screen w-screen inset-0' autoPlay loop  muted src='/bg-video.mp4'>
+        <video className='-z-10  fixed object-cover h-screen w-full inset-0' autoPlay loop  muted src='/bg-video.mp4'>
           
         </video>
       

@@ -86,7 +86,7 @@ const Manager = () => {
                 
                 />
 
-            <div className="bg-pink-400/40 md:w-[700px] rounded-2xl  h-100 min-h-fit sm:w-[500px] backdrop-blur-xs mx-auto p-4 m-8 justify-center w-[370px] items-center flex flex-col">
+            <div className="  bg-pink-400/40 w-full max-w-[700px] rounded-2xl  h-100 min-h-fit  backdrop-blur-xs mx-auto p-4 m-8 justify-center items-center flex flex-col">
             <img className="w-50 h-50 object-cover shadow-2xl shadow-pink-300/60 rounded-full" src="cyberlock.jpg"/>
                 
                 <h1 className="text-4xl text-pink-400 border-b-4 border-b-pink-600 science-gothic m-2  shadow-lg
@@ -113,13 +113,13 @@ const Manager = () => {
 
                 <div className="passwords">
                     <h2 className="science-gothic font-bold text-center text-white md:w-150 w-97 rounded-md  px-2  ">Your passwords</h2>
-                    {passwordArray.length === 0 && <div className="text-center bg-black/30 rounded-md my-2 py-1 text-white">No passwords to show</div>}
+                    {passwordArray.length === 0 && <div className="text-center bg-black/30 rounded-md my-2 py-1 text-white w-40 mx-auto">No passwords to show</div>}
                     {passwordArray.length != 0 &&
 
 
 
-
-                        <table class="text-xs md:text-lg table-auto w-90  mx-auto md:w-full sm:w-120">
+                        <div className="w-full max-w-full overflow-x-auto">
+                        <table class="text-xs min-w-max md:text-lg table-auto w-full mx-auto ">
                             <thead className="bg-pink-600/40 text-white border-2 border-pink-600 science-gothic font-bold">
                                 <tr>
                                     <th className="p-1 px-2">Website</th>
@@ -164,7 +164,8 @@ const Manager = () => {
                                 }
 
                             </tbody>
-                        </table>}
+                        </table>
+                        </div>}
 
                 </div>
 
